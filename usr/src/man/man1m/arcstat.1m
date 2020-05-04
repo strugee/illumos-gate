@@ -12,7 +12,7 @@
 .\" Copyright 2014 Adam Stevko.  All rights reserved.
 .\" Copyright (c) 2015 by Delphix. All rights reserved.
 .\"
-.TH ARCSTAT 1M "Feb 4, 2014"
+.TH ARCSTAT 1M "May 4, 2020"
 .SH NAME
 arcstat \- report ZFS ARC and L2ARC statistics
 .SH SYNOPSIS
@@ -413,7 +413,6 @@ Display data with a specified separator (default: 2 spaces).
 .ne 2
 .na
 \fB\fB-x\fR\fR
-
 .ad
 .RS 12n
 Print extended stats (same as -f time,mfu,mru,mfug,mrug,eskip,mtxmis,dread,pread,read).
@@ -426,6 +425,15 @@ Print extended stats (same as -f time,mfu,mru,mfug,mrug,eskip,mtxmis,dread,pread
 .ad
 .RS 12n
 Show field headers and definitions
+.RE
+
+.sp
+.ne 2
+.na
+\fB\fB-r\fR\fR
+.ad
+.RS 12n
+Raw output mode (values not scaled)
 .RE
 
 .SH OPERANDS
